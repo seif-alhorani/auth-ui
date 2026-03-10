@@ -2,7 +2,7 @@
 
 A responsive, and modern authentication user interface featuring Login and Signup pages. Built with HTML5 and CSS3, this project focuses on a sleek user experience with smooth micro-interactions and animations.
 
-## 🚀 Features
+##  Features
 
 **Two Fully Designed Pages:** Includes both login.html and signup.html templates.
 **Fully Responsive Layout:** Adjusts seamlessly across desktop, tablet, and mobile screen sizes.
