@@ -25,60 +25,68 @@
         </ul>
     </nav>
 
-    <section>
-        <div class="main-container">
+    <main>
+        <section>
+            <div class="main-container">
 
-            <div class="profile-card">
-                <div class="profile-header">
-                    <div class="profile-picture">
-                        <label for="profile-upload" class="upload-label">
-                            <img src="./assets/images/User.png" alt="Profile Picture">
-                            <div class="upload-overlay">
-                                <span class="material-symbols-outlined">add_a_photo</span>
-                            </div>
-                        </label>
-                        <input type="file" id="profile-upload" accept="image/*">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-picture">
+                            <label for="profile-upload" class="upload-label">
+                                <img src="./assets/images/User.png" alt="Profile Picture">
+                                <div class="upload-overlay">
+                                    <span class="material-symbols-outlined">add_a_photo</span>
+                                </div>
+                            </label>
+                            <input type="file" id="profile-upload" accept="image/*">
+                        </div>
+                        <div class="profile-fields">
+                            <h3>User Name</h3>
+                            <span>email@gmail.com</span>
+                        </div>
                     </div>
-                    <div class="profile-fields">
-                        <h3>User Name</h3>
-                        <span>email@gmail.com</span>
+
+                    <div class="bio-section">
+                        <span>Bio</span>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal
+                            distribution of letters, as opposed to using 'Content here, content here', making it look
+                            like
+                            readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                            as
+                            their default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                            in
+                            their infancy. Various versions have evolved over the years, sometimes by accident,
+                            sometimes on
+                            purpose (injected humour and the like).
+                        </p>
+                    </div>
+                    <button class="edit-btn">Edit Profile</button>
+                </div>
+
+                <div class="stats-card">
+                    <h3 class="stats-title">Statistics</h3>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Blogs published</span>
+                        <span class="stat-value">12</span>
+                    </div>
+
+                    <div class="stat-item top-blogs">
+                        <span class="stat-label">Top 3 Blogs</span>
+                        <ul>
+                            <li>Mindful Musings</li>
+                            <li>Savvy Savories</li>
+                            <li>Wanderlust Wonders</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="bio-section">
-                    <span>Bio</span>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).
-                    </p>
-                </div>
-                <button class="edit-btn">Edit Profile</button>
             </div>
-
-            <div class="stats-card">
-                <h3 class="stats-title">Statistics</h3>
-
-                <div class="stat-item">
-                    <span class="stat-label">Blogs published</span>
-                    <span class="stat-value">12</span>
-                </div>
-
-                <div class="stat-item top-blogs">
-                    <span class="stat-label">Top 3 Blogs</span>
-                    <ul>
-                        <li>Mindful Musings</li>
-                        <li>Savvy Savories</li>
-                        <li>Wanderlust Wonders</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <span> © 2026 Blog Platform</span>
     </footer>
