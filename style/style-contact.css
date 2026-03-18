@@ -1,7 +1,9 @@
+@import url("global.css");
+
 .hero-section {
     text-align: center;
     padding: 60px 20px;
-    color: snow;
+    color: var(--text-main-light);
     animation: slideUpFade 1s ease-out;
 }
 
@@ -12,7 +14,7 @@
 
 .hero-section p {
     font-size: 1.2rem;
-    color: #a0a0a0;
+    color: var(--text-muted-light);
 }
 
 
@@ -27,10 +29,10 @@
 }
 
 .contact-info, .contact-form {
-    background-color: snow;
+    background-color: var(--color-surface-light);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px var(--shadow-soft);
     flex: 1; 
     min-width: 320px;
     animation: slideUpFade 1s ease-out forwards;
@@ -38,10 +40,10 @@
 
 
 .contact-info h1, .contact-form h1 {
-    color: #000;
+    color: var(--text-main-dark);
     margin-bottom: 30px;
     font-size: 1.8rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid var(--border-light);
     padding-bottom: 10px;
 }
 
@@ -53,8 +55,8 @@
 }
 
 .info-item .material-symbols-outlined {
-    background: #000;
-    color: snow;
+    background: var(--color-primary);
+    color: var(--color-surface-light);
     padding: 10px;
     border-radius: 50%;
     font-size: 24px;
@@ -68,7 +70,7 @@
 
 .info-item p {
     margin: 5px 0 0 0;
-    color: #555;
+    color: var(--text-muted-dark);
 }
 
 
@@ -78,13 +80,13 @@
 
 .contact-form label {
     font-size: 0.9rem;
-    color: #333;
+    color: var(--border-dark);
     margin-bottom: 8px;
 }
 
 .contact-form input, .contact-form textarea {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: var(--color-input-bg);
+    border: 1px solid var(--border-light);
     padding: 12px 15px;
     transition: border-color 0.3s ease;
 }
@@ -93,7 +95,7 @@
     resize: vertical;
 }
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #000;
+    border-color: var(--color-primary);
 }
 
 .submit-btn {

@@ -1,0 +1,63 @@
+@import url("global.css");
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-main-light);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.blog-form {
+    background-color: var(--color-surface-light);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow-soft);
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-main-dark);
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background-color: var(--color-input-bg);
+}
+
+.input-group textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.publish-btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.publish-btn:hover {
+    background-color: var(--color-hover-dark);
+    transform: scale(1.02);
+}

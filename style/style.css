@@ -1,9 +1,11 @@
+@import url("global.css");
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(135deg, #050505 0%, #1a1a1a 100%);
+  background:var(--bg-main-gradient);
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -15,9 +17,10 @@ body {
 main{
   flex: 1;
 }
+
 nav {
-  background-color: snow;
-  border-bottom: 1px solid #333333;
+  background-color: var(--color-surface-light);
+  border-bottom: 1px solid var(--border-dark);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -36,7 +39,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: #000000;
+  color: var(--text-main-dark);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -49,8 +52,8 @@ nav ul li a img {
 }
 
 nav ul li a:hover {
-  color: snow;
-  background-color: #000000;
+  color: var(--color-surface-light);
+  background-color:var(--color-primary);
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
@@ -60,8 +63,8 @@ nav ul button {
   padding: 8px 24px;
   margin: 10px 0;
   background-color: transparent;
-  color: #000000;
-  border: 2px solid #c0c0c0;
+  color:var(--text-main-dark);
+  border: 2px solid var(--border-silver);
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
@@ -69,8 +72,8 @@ nav ul button {
 }
 
 nav ul button:hover {
-  background-color: #000000;
-  color: snow;
+  background-color: var(--color-primary);
+  color: var(--color-surface-light);
   transform: scale(1.05);
 }
 
@@ -95,9 +98,9 @@ nav ul button:hover {
 }
 
 .form-card {
-  background-color: snow;
+  background-color: var(--color-surface-light);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px var(--shadow-soft);
   padding: 2rem;
   width: 100%;
   max-width: 450px;
@@ -123,13 +126,13 @@ input {
   margin-bottom: 1.2rem;
   font-size: 1rem;
   line-height: 1.5;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-light);
   border-radius: 5px;
 }
 
 input:focus {
   outline: none;
-  border-color: #444;
+  border-color: var(--border-dark);
 }
 
 button {
@@ -138,8 +141,8 @@ button {
   border-radius: 15px;
   font-size: 16px;
   font-family: inherit;
-  color: snow;
-  background-color: black;
+  color: var(--color-surface-light);
+  background-color: var(--color-primary);
   border: none;
   cursor: pointer;
   margin-top: 1rem;
@@ -148,13 +151,13 @@ button {
 }
 
 button:hover {
-  background-color: #222;
+  background-color: var(--color-hover-dark);
   transform: scale(1.02);
 }
 
 .form-card a {
   text-decoration: none;
-  color: #333;
+  color: var(--color-surface-light);
 }
 
 .form-card a:hover {
@@ -171,7 +174,7 @@ button:hover {
 .form-card span {
   display: block;
   font-size: 0.85rem;
-  color: #555;
+  color: var(--color-surface-light);
   margin-bottom: 1rem;
 }
 
@@ -186,7 +189,7 @@ button:hover {
 }
 
 footer {
-  background-color: snow;
+  background-color: var(--color-surface-light);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,16 +205,13 @@ textarea {
 }
 
 .error-message {
-  color: #ff4d4d;
+  color: var(--text-error);
   font-size: 0.8rem;
   margin-top: 5px;
   display: block;
   min-height: 1px;
 }
 
-.input-error {
-  border-color: #ff4d4d !important;
-}
 
 @keyframes logoAnimation {
   from {
