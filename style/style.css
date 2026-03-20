@@ -157,7 +157,7 @@ button:hover {
 
 .form-card a {
   text-decoration: none;
-  color: var(--color-surface-light);
+  color: var( --text-muted-light);
 }
 
 .form-card a:hover {
@@ -174,7 +174,7 @@ button:hover {
 .form-card span {
   display: block;
   font-size: 0.85rem;
-  color: var(--color-surface-light);
+  color: var( --text-muted-light);
   margin-bottom: 1rem;
 }
 
