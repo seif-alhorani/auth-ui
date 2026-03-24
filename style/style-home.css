@@ -1,0 +1,121 @@
+@import url("global.css");
+
+
+.hero-section {
+
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 50px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--text-main-light);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: var(--text-muted-light);
+}
+
+
+.about-section {
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 50px;
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    color: var(--text-main-light);
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: var(--text-muted-light);
+}
+
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-left: 20px;
+    padding: 20px 50px 60px 50px;
+    gap: 50px;
+    max-width: 1300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: var(--text-main-light);
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px var(--shadow-soft);
+}
+
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+    border-color: var(--text-silver);
+}
+
+.card-image {
+    display: flex;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border: 15px;
+    border-radius: 15px;
+    background-color: rgb(81, 81, 87);
+    color: var(--text-main-light);
+
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h2 {
+    margin: 0px 0px 10px 0px;
+    font-size: 1rem;
+}
+
+.card-content p {
+    flex-grow: 1;
+    font-size: .95rem;
+    color: var(--text-silver);
+}
+
+.card-content span {
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: .85rem;
+    border-top: 1px solid var(--border-dark);
+    color: var(--text-muted-light);
+}

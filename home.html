@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-home.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img class="logo" src="./assets/images/logo.jpg" alt="Logo" onclick="localStorage.clear()">
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="create.html">Create Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button onclick="location.href='login.html'">Logout</button></li>
+            <li><a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Title</h1>
+                <p>Subtitle</p>
+                <button>call to action</button>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, recusandae. Error neque excepturi
+                    quae quis quam iusto sed fugit fugiat est veritatis. Cum, natus animi minima voluptates error porro
+                    consectetur!
+                </p>
+            </div>
+        </section>
+        <section class="additional-section">
+
+        </section>
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; padding: 0px 50px; margin: 40px;">
+            <h1 style="color: var(--text-main-light)">Latest Blog</h1>
+            <button style="width: auto; padding: 10px 20px; margin: 0 px;" onclick="location.href='blogs.html'">See
+                All</button>
+        </div>
+        <section class="blog-section" id="blog-container">
+            
+        </section>
+    </main>
+    <footer>
+        <span> © 2026 Blog Platform</span>
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/script-home.js"></script>
+</body>
+
+</html>
