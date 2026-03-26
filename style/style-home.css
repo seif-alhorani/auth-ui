@@ -40,10 +40,10 @@
 
 .blog-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
     margin-left: 20px;
     padding: 20px 50px 60px 50px;
-    gap: 50px;
+    gap: 80px;
     max-width: 1300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -52,9 +52,9 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     color: var(--text-main-light);
-    border: 1px;
+    border: 1px;    
     border-radius: 15px;
     box-shadow: 10px 5px 5px var(--shadow-soft);
 }
