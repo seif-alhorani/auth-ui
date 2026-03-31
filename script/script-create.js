@@ -21,11 +21,12 @@ imageFile.addEventListener("change", function () {
         removeBtn.style.display = "none";
     }
 });
-removeBtn.addEventListener("click", function() {
-    imageFile.value = ""; 
+removeBtn.addEventListener("click", function () {
+    imageFile.value = "";
     this.style.display = "none";
-    imageUrl.disabled = false; 
+    imageUrl.disabled = false;
     console.log("File removed");
+   
 });
 
 document.getElementById('blogForm').addEventListener('submit', function (e) {
@@ -65,7 +66,14 @@ document.getElementById('blogForm').addEventListener('submit', function (e) {
         document.getElementById("blogForm").reset();
         imageUrl.disabled = false;
         imageFile.disabled = false;
+        removeBtn.style.visibility="hidden";//remove me new 
 
-        alert("Success!");
+        Swal.fire({
+            title: "Success",
+            text: "Created Successfully",
+            icon: "success",
+            theme: 'dark',
+            confirmButtonColor:"#000000"
+        });
     }
 });

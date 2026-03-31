@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <link rel="stylesheet" href="./style/colors.css">
-    <link href="./style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.jpg">
+
+    <link href="./style/colors.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <link rel="icon" href="../assets/images/logo.jpg">
 </head>
 
 <body>
@@ -18,33 +21,44 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="create.html">Create Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button onclick="location.href='login.html'"onclick="localStorage.clear()">Logout</button></li>
-            <li><a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>
             </li>
         </ul>
     </nav>
     <div class="container">
         <div class="form-card">
             <h3>Signup</h3>
-            <form onsubmit="return validateSignupForm()">
+            <form id="signform" onsubmit="return validateSignupForm()">
                 <div class="mb-3">
                     <label for="fullname">Full Name</label>
-                    <input type="text" class="form-control" id="fullname" placeholder="Full Name" required>
+                    <input type="text" class="form-control" id="fullname" placeholder="Full Name" >
+                    <span id="nameError" class="error-message"></span>
                 </div>
                 <div class="mb-3">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" >
+                    <span id="emailError" class="error-message"></span>
                 </div>
                 <div class="mb-3">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="****" required>
+                    <input type="password" id="password" placeholder="********"   >
+                    <span id="passwordError" class="error-message"></span>
                 </div>
                 <div class="mb-3">
                     <label for="cpassword">Confirm Password</label>
-                    <input type="password" id="cpassword" placeholder="****" required>
+                    <input type="password" id="cpassword" placeholder="********" >
+                    <span id="cpasswordError" class="error-message"></span>
+                    <span id="notequalpasswordcpssword" class="error-message"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="phone">Phone Number</label>
+                    <div style="display: inline-flex;">
+                        <input type="text"  style="width:29%;"  placeholder="+962"  disabled>
+                        <input type="text" class="form-control" id="phone" placeholder="" >
+                    </div>
+                    <span id="phoneError" class="error-message"></span>
                 </div>
 
-                <button type="submit" onclick="location.href='login.html'">Signup</button>
+                <button type="submit" >Signup</button>
                 <div>
                     <span>Already have an account? </span><a href="login.html">Login here</a>
                 </div>
@@ -58,8 +72,11 @@
     <footer>
        <span id="copyright"></span> 
     </footer>
-    <script src="./script/scriptvalidation.js"></script>
-     <script src="./script/script-general.js"></script>
+   
+    <script src="./script/script-general.js"></script>
+    <script src="./script/script-sign.js"></script>
+    <script src="./script/script-validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

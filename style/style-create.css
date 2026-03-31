@@ -42,7 +42,6 @@
 
 .input-group textarea {
     height: 200px;
-    resize: vertical;
 }
 
 input:disabled {

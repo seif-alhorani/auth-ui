@@ -15,7 +15,8 @@
     --text-muted-dark: #555555;
     --text-muted-light: #a0a0a0;
     --text-silver: #c0c0c0;
-    --text-error: #ff4d4d;
+    --text-error: #ff1f1f;
+    --text-green: #025d26;
 
     /* --- Interactive & Accents --- */
     --color-primary: #000000;

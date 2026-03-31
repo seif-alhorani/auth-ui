@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.jpg">
     <link rel="stylesheet" href="./style/colors.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/style-home.css">
@@ -21,9 +22,7 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="create.html">Create Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button onclick="localStorage.clear(); location.href = 'login.html';">Logout</button></li>
-            <li><a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>
-            </li>
+            <li><button onclick="location.href = 'login.html';">Login</button></li>
         </ul>
     </nav>
     <main>
@@ -87,7 +86,8 @@
     </footer>
     <script src="./script/script.js"></script>
     <script src="./script/script-home.js"></script>
-     <script src="./script/script-general.js"></script>
+    <script src="./script/script-general.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

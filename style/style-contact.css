@@ -92,7 +92,6 @@
 }
 .contact-form textarea{
     height: 150px;
-    resize: vertical;
 }
 .contact-form input:focus, .contact-form textarea:focus {
     border-color: var(--color-primary);

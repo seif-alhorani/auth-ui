@@ -1,6 +1,6 @@
 
 async function getData() {
-    const url = "https://newsapi.org/v2/everything?q=tesla&from=2026-02-28&sortBy=publishedAt&apiKey=Your API KEY Here";
+    const url = "https://newsapi.org/v2/everything?q=tesla&from=2026-02-28&sortBy=publishedAt&apiKey=b320906ec4234ae09487ee6024bff3ab";
     try {
         const response = await fetch(url);
         if (!response.ok) {

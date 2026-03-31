@@ -205,13 +205,16 @@ textarea {
 }
 
 .error-message {
-  color: var(--text-error);
+  color: var(--text-error)  !important; 
   font-size: 0.8rem;
   margin-top: 5px;
   display: block;
   min-height: 1px;
 }
 
+textarea{
+  resize: none;
+}
 
 @keyframes logoAnimation {
   from {
