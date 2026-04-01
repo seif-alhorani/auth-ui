@@ -37,8 +37,9 @@ async function checkEmail() {
     }
     if(emaillist && location !=="profile.html"){
         const checkstored= localStorage.getItem("userProfileImage");
-        let userProfileImage= checkstored ? checkstored : "./assets/images/User.png";
-        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem("emails"); location.href = 'login.html';">Logout</button>`;
+        const Userimgpath = "./assets/images/User.png"
+        let userProfileImage= checkstored ? checkstored : Userimgpath ;
+        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem('emails'); location.href='login.html';">Logout</button>`;
         document.getElementById("profpic").innerHTML=`<a href="profile.html"><img class="profile-pic" src="${userProfileImage}" alt="profile-pic"></a>`;
     }
     if(emaillist){
