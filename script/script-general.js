@@ -19,7 +19,7 @@ async function checkEmail() {
 
     let location = getpagename();
     console.log(location);
-    if (location === "create.html" || location === "blogs.html" || location === "single-blog.html"){
+    if (location === "create.html" || location === "blogs.html" || location === "single-blog.html" || location === "dashboard.html"){
         if(!emaillist) {
             Swal.fire({
                 title: "Error",

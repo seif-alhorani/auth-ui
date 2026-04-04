@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,14 @@
     <link rel="stylesheet" href="./style/colors.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/style-single.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <head>
+    </head>
 </head>
-</head>
+
 <body>
-     <nav>
+    <nav>
         <ul>
             <li>
                 <img class="logo" src="./assets/images/logo.jpg" alt="Logo">
@@ -30,12 +33,24 @@
     <main>
         <section class="single-blog-container" id="blog-content">
             <h2 style="text-align: center;color: var(--text-muted-light);margin-top: 50px;">Loading blog...</h2>
-            
+
+        </section>
+        <section class="comment-section"
+            style="max-width: 800px; margin: 20px auto; padding: 20px; color: var(--text-silver);">
+            <h3>Comments</h3>
+            <div id="comments-display-container">
+            </div>
+            <hr style="border: 0.5px solid var(--border-dark); margin: 20px 0;">
+            <div class="add-comment-form">
+                <textarea id="commentInput" placeholder="Add a comment..."
+                    style="padding: 10px; border-radius: 8px; margin-bottom: 10px;"></textarea>
+                <button id="addCommentBtn" style="width: auto; padding: 10px 20px;">Add Comment</button> 
+            </div>
         </section>
     </main>
 
     <footer>
-        <span id="copyright"></span> 
+        <span id="copyright"></span>
     </footer>
 
     <script src="./script/script.js"></script>
@@ -43,4 +58,5 @@
     <script src="./script/script-single.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
